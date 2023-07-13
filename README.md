@@ -149,7 +149,7 @@ Register Number: 212221230086
 verilog
 
 # SR flip flop:
-
+```
 module exp_5a(s,r,clk,q,qbar);
 input s,r,clk;
 output q,qbar;
@@ -160,13 +160,13 @@ q<=s|(~r&q);
 qbar<=r|(~s&~q);
 end
 endmodule
-
+```
 
 
 verilog
 
 # JK flip flop:
-
+```
 module exp_5b(j,k,clk,q,qbar);
 input j,k,clk;
 output q,qbar;
@@ -177,13 +177,13 @@ q<=(j&~q)|(~k&q);
 qbar<=~q;
 end 
 endmodule
-
+```
 
 
 verilog
 
 # T flip flop:
-
+```
 module exp_5c(clk,T,q,qbar);
 input clk,T;
 output q,qbar;
@@ -194,13 +194,13 @@ q<=(T&~q)|(~T&q);
 qbar<=~q;
 end 
 endmodule
-
+```
 
 
 verilog
 
 # D flip flop:
-
+```
 module exp_5d(d,clk,q,qbar);
 input d,clk;
 output q,qbar;
@@ -211,7 +211,7 @@ q<=d;
 qbar<=~q;
 end 
 endmodule
-
+```
 
 
 ### OUTPUT :
